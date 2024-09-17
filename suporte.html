@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="img/facilitalogo.png" alt="Logo" class="logo">
+            </div>
+            <div id="menu" class="menu">
+                <a href="inicio.html" id="inicio">Inicio</a>
+                <a href="sobrenos.html" id="sobre">Sobre Nós</a>
+                <a href="cursos.html" id="cursos">Cursos</a>
+                <a href="suporte.html" id="suporte">Suporte</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <main>
+        <section class="contact-form">
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="accessKey" value="e688e972-d809-425b-9fe2-96259e81ba7c">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
