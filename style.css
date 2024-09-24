@@ -15,9 +15,16 @@ body {
     z-index: 2;
 }
 
+
 .logo-container {
     display: flex;
     align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.logo-container:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .logo {
@@ -106,7 +113,7 @@ body {
 }
 
 .content {
-    padding: 50px;
+    padding: 80px;
 }
 
 .subject {
@@ -123,15 +130,35 @@ body {
 
 #exatas .subject {
     border-top-color: #e2d40b; /* Vermelho para Exatas */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#exatas .subject:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 #linguagens .subject {
     border-top-color: #00ff00; /* Verde para Linguagens */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#linguagens .subject:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 #humanas .subject {
-    border-top-color: #f40606; /* Azul para Humanas */
+    border-top-color: #442424; /* Azul para Humanas */
+    transition: all 0.5s;
+    cursor: pointer;
 }
+#humanas .subject:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+
 
 .content .subject:hover {
     cursor: pointer;
