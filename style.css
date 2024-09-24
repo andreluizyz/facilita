@@ -149,7 +149,7 @@ body {
 }
 
 #humanas .subject {
-    border-top-color: #442424; /* Azul para Humanas */
+    border-top-color: #e91e1e; /* Azul para Humanas */
     transition: all 0.5s;
     cursor: pointer;
 }
